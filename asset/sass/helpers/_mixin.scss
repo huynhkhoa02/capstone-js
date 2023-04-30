@@ -1,0 +1,7 @@
+@mixin textNormal($fs:$fs-normal,$fw: $fw-normal,$c:$fc-dark,$ff:$ff-normal)
+{
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    font-family: $ff;
+}

@@ -1,0 +1,47 @@
+@import "helpers/variable";
+@import "helpers/mixin";
+@import "component/button";
+
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
+body{
+    #formSignUp{
+        h1{
+            text-align: center;margin-bottom: 50px;
+        }
+        .row{
+            .col-6{
+                input{width: 482px;
+                    height: 51px;
+                    position: relative;margin-top:15px;
+                    &::placeholder{
+                        @include textNormal($fs-3xl,$fw-regular,$fc-dark,)
+                    }
+                    &{outline: none;
+                        border: none; background-color: antiquewhite;
+                    }
+                    &::after{position: absolute;
+                        bottom: 1px;
+                        left: 0;
+                        width:420px;
+                        height:3px;
+                        background-color: red;
+                        content:'';
+                    };
+                }
+            //     input::before{
+            //         position: absolute;
+            //             bottom: 1px;
+            //             left: 0;
+            //             width:420px;
+            //             height:3px;
+            //             background-color: red;
+            //          content:''
+            //         !important
+            //     }
+            }
+        }
+    }
+}

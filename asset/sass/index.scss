@@ -1,0 +1,64 @@
+@import "helpers/variable";
+@import "helpers/mixin";
+@import "component/button";
+@import "component/trialogy";
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    #carouselExampleCaptions{position: relative;
+        width: 1280px;
+            height: 530px;
+        background-image: url(/asset/image/bgred.png);background-repeat: no-repeat;background-size: 1317px 393px;background-position:top 107px left -22px ;position: absolute;;
+        .carousel-indicators{
+            button{
+                @extend .buttonIndicator;
+            }
+        }
+        .carousel-inner{position: relative;
+            width: 1280px;
+            height: 530px;
+            .carousel-item{
+                img{position: absolute;
+                    width: 821px;
+                    height: 392px;
+                    left: 86px;
+                    top: 5px;   
+                }
+                .carousel-caption{position: absolute;
+                    width: 291px;
+                    height: 51px;
+                    left: 930px;
+                    top: 95px;
+                    h5{ @include textNormal($fs-4xl,$fw-normal,$fc-dark,)}
+                    p{
+                    padding-right: 72px;
+                    @include textNormal($fs-xl,$fw-normal,$fc-dark,)}
+                    .btn-buy{
+                        margin-right: 110px;
+                        margin-top:12px;
+                        @include textNormal($fs-xl,$fw-normal,$fc-light,); 
+                       @extend .buttonBuy ;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev{
+            .carousel-control-prev-icon{
+                background-image: none;
+                @extend .trianglePrev;
+                background-color: red;
+            }
+        }
+        .carousel-control-next{
+            .carousel-control-next-icon{background-image: none;
+                @extend .triangleNext;
+                background-color: red;}
+
+                
+        }
+    }
+    
+}

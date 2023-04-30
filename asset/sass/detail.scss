@@ -1,0 +1,66 @@
+@import "helpers/variable";
+@import "helpers/mixin";
+@import "component/button";
+
+body{
+    .container{
+        .product-detail{position: relative;
+            width: 1280px;
+            height: 530px;
+            .photo{
+                position: absolute;
+                width: 334px;
+                height: 355px;
+                left: 65px;
+                top: 58px;
+                background-color: #f8f8f8;
+                img{
+                    position: absolute;
+                    width: 220px;
+                    height: 156px;
+                    left: 57px;
+                    top: 109px;
+
+                }
+            }
+            .detail{position: absolute;
+                width: 196px;
+                height: 36px;
+                left: 527px;
+                top: 67px;
+                
+                h1{
+                    @include textNormal($fs-3xl,$fw-normal,$fc-dark,)
+                }
+                .descriptionDetail{
+                    
+                }
+                span{
+                    @include textNormal($fs-2xl,$fw-medium,$fc-green,)
+                }
+                .catalogue-size{display: flex;flex-direction: row;margin-top: 20px;
+                
+                        .btnsize{@extend .btnSize;display: block;margin-right: 20px;text-align: center;@include textNormal($fs-2xl,$fw-semibold,$fc-dark,)}
+                        }
+                }   
+                h3{@include textNormal($fs-3xl,$fw-semibold,$fc-red,);margin-top:20px;}
+                .changethenumber{
+                    #btn-up{
+                        @include textNormal($fs-3xl,$fw-regular ,$fc-light , );
+                        @extend .btnUpDown;
+                    }
+                    #number{}
+                    #btn-down{
+                        @include textNormal($fs-3xl,$fw-regular ,$fc-light , );
+                        @extend .btnUpDown;
+                    }
+                }
+                #btn-add-to-cart{
+                    margin-top: 10px;
+                    @include textNormal($fs-2xl,$fw-medium,$fc-light,);
+                    @extend .btnAdd2Cart;
+                }
+            }
+        }
+
+    }

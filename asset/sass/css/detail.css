@@ -1,0 +1,122 @@
+.buttonBuy {
+  border: 1px solid none;
+  border-radius: 1px;
+  background-color: #F8B653;
+  width: 150px;
+  height: 50px;
+  transition: background-color 0.3s;
+}
+.buttonBuy:hover {
+  background-color: #f2a229;
+  transition: all 0.3s;
+}
+
+.buttonIndicator {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.btnSize, body .container .product-detail .detail .catalogue-size .btnsize {
+  background-color: #CCCCCC;
+  border-radius: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.btnUpDown, body .container .product-detail .changethenumber #btn-down, body .container .product-detail .changethenumber #btn-up {
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.btnAdd2Cart, body .container .product-detail #btn-add-to-cart {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+  border-radius: 0px;
+  width: 175px;
+  height: 64px;
+}
+
+body .container .product-detail {
+  position: relative;
+  width: 1280px;
+  height: 530px;
+}
+body .container .product-detail .photo {
+  position: absolute;
+  width: 334px;
+  height: 355px;
+  left: 65px;
+  top: 58px;
+  background-color: #f8f8f8;
+}
+body .container .product-detail .photo img {
+  position: absolute;
+  width: 220px;
+  height: 156px;
+  left: 57px;
+  top: 109px;
+}
+body .container .product-detail .detail {
+  position: absolute;
+  width: 196px;
+  height: 36px;
+  left: 527px;
+  top: 67px;
+}
+body .container .product-detail .detail h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #140101;
+  font-family: "Inter";
+}
+body .container .product-detail .detail span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+  font-family: "Inter";
+}
+body .container .product-detail .detail .catalogue-size {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+body .container .product-detail .detail .catalogue-size .btnsize {
+  display: block;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #140101;
+  font-family: "Inter";
+}
+body .container .product-detail h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+  font-family: "Inter";
+  margin-top: 20px;
+}
+body .container .product-detail .changethenumber #btn-up {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Inter";
+}
+body .container .product-detail .changethenumber #btn-down {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Inter";
+}
+body .container .product-detail #btn-add-to-cart {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Inter";
+}

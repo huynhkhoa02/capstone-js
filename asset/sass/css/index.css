@@ -1,0 +1,125 @@
+.buttonBuy, body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .btn-buy {
+  border: 1px solid none;
+  border-radius: 1px;
+  background-color: #F8B653;
+  width: 150px;
+  height: 50px;
+  transition: background-color 0.3s;
+}
+.buttonBuy:hover, body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .btn-buy:hover {
+  background-color: #f2a229;
+  transition: all 0.3s;
+}
+
+.buttonIndicator, body #carouselExampleCaptions .carousel-indicators button {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.btnSize {
+  background-color: #CCCCCC;
+  border-radius: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.btnUpDown {
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.btnAdd2Cart {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+  border-radius: 0px;
+  width: 175px;
+  height: 64px;
+}
+
+.trianglePrev, body #carouselExampleCaptions .carousel-control-prev .carousel-control-prev-icon {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 66.13px;
+  height: 45.71px;
+  transform: rotate(-90deg);
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.triangleNext, body #carouselExampleCaptions .carousel-control-next .carousel-control-next-icon {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 66.13px;
+  height: 45.71px;
+  transform: rotate(90deg);
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body #carouselExampleCaptions {
+  position: relative;
+  width: 1280px;
+  height: 530px;
+  background-image: url(/asset/image/bgred.png);
+  background-repeat: no-repeat;
+  background-size: 1317px 393px;
+  background-position: top 107px left -22px;
+  position: absolute;
+}
+body #carouselExampleCaptions .carousel-inner {
+  position: relative;
+  width: 1280px;
+  height: 530px;
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item img {
+  position: absolute;
+  width: 821px;
+  height: 392px;
+  left: 86px;
+  top: 5px;
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  width: 291px;
+  height: 51px;
+  left: 930px;
+  top: 95px;
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #140101;
+  font-family: "Inter";
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+  padding-right: 72px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #140101;
+  font-family: "Inter";
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .btn-buy {
+  margin-right: 110px;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "Inter";
+}
+body #carouselExampleCaptions .carousel-control-prev .carousel-control-prev-icon {
+  background-image: none;
+  background-color: red;
+}
+body #carouselExampleCaptions .carousel-control-next .carousel-control-next-icon {
+  background-image: none;
+  background-color: red;
+}
